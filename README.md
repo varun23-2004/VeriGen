@@ -61,14 +61,22 @@ The tool clearly separates generated files into isolated project folders or rath
  
 For example: Let's say you wanted to design  a FIFO and now the projet is ready. 
 There wil be a folder called "examples" and inside that is the FIFO project and it will consist of the following files and order: 
+
 examples/
+
 |__ FIFO_Project/
-    |_ hdl/ 
-    |  |_fifo.v 		<---Agent 1 Synthesised RTL
-    |_ sim/
-       |_fifo_tb.v		<---Agent 2 Generated testbench
-       |_sim.out		<---Icarus Verilog compiled binary
-       |_fifo.vcd		<---Simulation Waveform 
+
+	|_ hdl/ 
+    
+	|  |_fifo.v 		<---Agent 1 Synthesised RTL
+    
+	|_ sim/
+    
+	   |_fifo_tb.v		<---Agent 2 Generated testbench
+       
+	   |_sim.out		<---Icarus Verilog compiled binary
+       
+	   |_fifo.vcd		<---Simulation Waveform 
 
 To verify the waveform you click on the  ".vcd" file or run this command 
 "gtkwave examples/project_folder/sim/project_name.vcd"
