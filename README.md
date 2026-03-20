@@ -47,7 +47,7 @@ Ensure your environment has the following installed:
 ## Step-By-Step Exceution Guide 
 **Step 1: Lanuch the Application** Go to the root directory of the project and run this command python3 main.py or try python3 src/main.py
 
-**Step 2: Select an IP Core ** The CLI will present an interacive menu. Enter the number corresponding to your desired module. 
+**Step 2: Select an IP Core** The CLI will present an interacive menu. Enter the number corresponding to your desired module. 
 
 **Step 3: Define the parameters** The tool will then dynamically ask for the parameters according to your selected module. 
 
