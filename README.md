@@ -64,19 +64,19 @@ There wil be a folder called "examples" and inside that is the FIFO project and 
 
 examples/
 
-|__ FIFO_Project/
+	|__ FIFO_Project/
 
-	|_ hdl/ 
+		|_ hdl/ 
     
-	|  |_fifo.v 		<---Agent 1 Synthesised RTL
+		|  |_fifo.v 		<---Agent 1 Synthesised RTL
     
-	|_ sim/
+		|_ sim/
     
-	   |_fifo_tb.v		<---Agent 2 Generated testbench
+		   |_fifo_tb.v		<---Agent 2 Generated testbench
        
-	   |_sim.out		<---Icarus Verilog compiled binary
+		   |_sim.out		<---Icarus Verilog compiled binary
        
-	   |_fifo.vcd		<---Simulation Waveform 
+		   |_fifo.vcd		<---Simulation Waveform 
 
 To verify the waveform you click on the  ".vcd" file or run this command 
 "gtkwave examples/project_folder/sim/project_name.vcd"
