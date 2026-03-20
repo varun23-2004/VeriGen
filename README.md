@@ -1,7 +1,7 @@
 # VeriGen: AI-Powered RTL Generator & Validator
 
 ##  Project Overview
-The AI RTL Generator is an automated, Command-Line Interface (CLI) tool designed to accelerate the semiconductor design workflow. It utilizes dual AI agents to generate highly parameterized, synthesizable Verilog (IEEE 1364-2001) modules and automatically validates them using an integrated open-source EDA pipeline.
+The AI RTL Generator is an automated, Command-Line Interface (CLI) tool designed to accelerate the semiconductor design workflow. It utilizes dual AI agents to generate highly parameterized, synthesizable `Verilog (IEEE 1364-2001)` modules and automatically validates them using an integrated open-source EDA pipeline.
 Agent 1 acts as a design engineer, generating stricly verilog-2001 standard code. Agent 2 acts as the verification engineer, writing the testbench and running it through an automated Icarus Verilog pipeline.
  
 ##  Key Features
@@ -10,7 +10,7 @@ Agent 1 acts as a design engineer, generating stricly verilog-2001 standard code
 * **Synthesizable Output:** Strictly enforces Verilog-2001 standards, automatically calculates address widths (`$clog2`).
 * **Strict Synthesis Rules** The system prompt forces the AI to avoid initial blocks in the RTL, handle default cases in the state machines and ensure zero  latch interference 
 * **Automated Verification Pipeline:** Automatically generates a companion testbench, compiles the code via Icarus Verilog, and runs the simulation to produce `.vcd` waveforms
-* **Smart Workspace Management** Automatically arranges the .v, .vcd, _tb.v files into the isolated project directories within the /examples folder.
+* **Smart Workspace Management** Automatically arranges the `.v`, `.vcd`, `_tb.v` files into the isolated project directories within the /examples folder.
 
 ##  Repository Structure
 * `/src` - Core Python source code, API configurations, and prompt rules.
@@ -41,8 +41,8 @@ Ensure your environment has the following installed:
    `GEMINI_API_KEY="your_api_key_here"`
 
 3. Run the application from the root directory:
-   ```bash
-   python src/main.py
+   `bash
+   python src/main.py`
 
 ## Step-By-Step Exceution Guide 
 **Step 1: Lanuch the Application** Go to the root directory of the project and run this command python3 main.py or try python3 src/main.py
