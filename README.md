@@ -36,25 +36,30 @@ Ensure your environment has the following installed:
 
 ##  Usage Instructions
 1. Clone this repository and navigate to the root directory.
+   
 2. Add your Gemini API Key to the `.env` file inside the `src/` folder:
    `GEMINI_API_KEY="your_api_key_here"`
+
 3. Run the application from the root directory:
    ```bash
    python src/main.py
 
 ## Step-By-Step Exceution Guide 
-**Step 1: Lanuch the Application** Go to the root directory of the project and run this command python3 main.py or try python3 src/main.py 
+**Step 1: Lanuch the Application** Go to the root directory of the project and run this command python3 main.py or try python3 src/main.py
+
 **Step 2: Select an IP Core ** The CLI will present an interacive menu. Enter the number corresponding to your desired module. 
+
 **Step 3: Define the parameters** The tool will then dynamically ask for the parameters according to your selected module. 
+
 **Step 4: Automated Pipeline Execution** The tool will now run autonomously. You will see the following sequence in your terminal. 
 					
-					1) Agent 1 generates the strict, parameter driven Verilog2001 code.
+	1) Agent 1 generates the strict, parameter driven Verilog2001 code.
 					
-					2) Agent 2 generates the coressponding _tb.v testench.
+	2) Agent 2 generates the coressponding _tb.v testench.
 					
-					3) The system runs iverilog to check for syntax and compile the design.
+	3) The system runs iverilog to check for syntax and compile the design.
 					
-					4) The system runs vvp to simulate the logic and dump into the waveform.
+	4) The system runs vvp to simulate the logic and dump into the waveform.
 
 ## Locating and Verifying the Outputs 
 The tool clearly separates generated files into isolated project folders or rather directories. 
