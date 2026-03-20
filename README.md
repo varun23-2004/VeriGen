@@ -15,7 +15,7 @@ Agent 1 acts as a design engineer, generating stricly verilog-2001 standard code
 ##  Repository Structure
 * `/src` - Core Python source code, API configurations, and prompt rules.
 * `/examples` - Generated Verilog IP cores, testbenches, and simulation artifacts.
-* `/documentation` - Daily progress reports and GTKWave validation screenshots.
+* `/documentation` - Consists the design_spec file
 * `/demo_material` - Video demonstrations of the tool execution.
 
 ##  Prerequisites
