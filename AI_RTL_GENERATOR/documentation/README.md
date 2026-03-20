@@ -47,9 +47,13 @@ Ensure your environment has the following installed:
 **Step 2: Select an IP Core ** The CLI will present an interacive menu. Enter the number corresponding to your desired module. 
 **Step 3: Define the parameters** The tool will then dynamically ask for the parameters according to your selected module. 
 **Step 4: Automated Pipeline Execution** The tool will now run autonomously. You will see the following sequence in your terminal. 
+					
 					1) Agent 1 generates the strict, parameter driven Verilog2001 code.
+					
 					2) Agent 2 generates the coressponding _tb.v testench.
+					
 					3) The system runs iverilog to check for syntax and compile the design.
+					
 					4) The system runs vvp to simulate the logic and dump into the waveform.
 
 ## Locating and Verifying the Outputs 
