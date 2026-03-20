@@ -1,5 +1,6 @@
 # RTL Design & Micro-Architecture Specification
 **Version:** 1.0
+
 **Target Standard:** IEEE 1364-2001 (Verilog-2001)
 
 ## 1. Objective
